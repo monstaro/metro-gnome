@@ -34,7 +34,7 @@
         const osc = this.audioContext.createOscillator();
         const envelope = this.audioContext.createGain();
         
-        osc.frequency.value = (beatNumber % 4 == 0) ? 2000 : 1000;
+        osc.frequency.value = (beatNumber % 4 == 0) ? 1800 : 1200;
         envelope.gain.value = 1;
         envelope.gain.exponentialRampToValueAtTime(1, time + 0.001);
         envelope.gain.exponentialRampToValueAtTime(0.001, time + 0.02);
@@ -75,7 +75,6 @@
     stop()
     {
         this.isRunning = false;
-
         clearInterval(this.intervalID);
     }
 
