@@ -17,6 +17,12 @@ playButton.addEventListener('click', function() {
 
 });
 
+const sayValue = (val) => {
+    metronome.tempo = parseInt(val);
+    tempo.textContent = val;
+}
+
+
 var tempoChangeButtons = document.getElementsByClassName('tempo-change');
 for (var i = 0; i < tempoChangeButtons.length; i++) {
     tempoChangeButtons[i].addEventListener('click', function() {

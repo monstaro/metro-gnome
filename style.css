@@ -2,15 +2,46 @@
     margin: 0;
 }
 
+.unit {
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
 .title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: bold;
     background: rgb(33, 137, 249);
     color: white;
-    width: 50%;
+    /* width: 100%; */
+    text-align: center;
 }
 
 .title img {
     height: 80px;
+}
+
+.play {
+    content: url('./on.svg');
+    width: 100px;
+    stroke: transparent;
+}
+
+.pause {
+    content: url('./off.svg');
+    width: 100px;
+}
+
+#tempo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bpm {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }

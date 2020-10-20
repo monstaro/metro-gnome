@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="unit">
     <div class="title">METRO GNOME <img src="./gnome.svg"></div>
+
+    <div class="tempo-container">
+        <div id="tempo"> </div> 
+        <div class="bpm">BPM
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="60" max="260" value="120" class="slider" id="myRange" onclick="sayValue(this.value)">
+          </div>
+    </div> 
     <button id="play-button" >
         <div id="play-pause-icon" class="play">Start / Stop</div>
     </button>
@@ -16,14 +26,14 @@
         <button class="tempo-change" data-change="-5">-5</button>
         <button class="tempo-change" data-change="-1">-1</button>
 
-        <div class="tempo-container">
-            <div id="tempo">120</div>
-            <div class="bpm">bpm</div>
-        </div>
+        
 
         <button class="tempo-change" data-change="+1">+1</button>
         <button class="tempo-change" data-change="+5">+5</button>
+
+        
     </div>
+</div>
 
 
 
